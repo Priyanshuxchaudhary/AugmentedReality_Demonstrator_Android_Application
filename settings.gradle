@@ -1,0 +1,14 @@
+include ':core', ':ux', ':sceneform',
+        // Samples
+        ':ar-model_viewer',
+        ':ar-image',
+        ':ar-video',
+        'ar-app'
+
+// Dirs
+project(':ar-model_viewer').projectDir = new File('samples/ar-model_viewer')
+project(':ar-image',).projectDir = new File('samples/ar-image')
+
+project(':ar-video').projectDir = new File('samples/ar-video')
+project(':ar-app').projectDir = new File('samples/ar-app')
+include ':ar-image:image_ar'
